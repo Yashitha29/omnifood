@@ -1,0 +1,739 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    font-family: "Rubik", sans-serif;
+    background-color: #f9f4ef;
+
+}
+
+.sticky .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0 10px 10px 10px;
+    font-size: 25px;
+    border-bottom: #e69500;
+
+}
+
+.navbar {
+    text-decoration: none;
+    background-color: #fff5e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 155px;
+    padding: 2em 1em;
+    position: relative;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.cta-button:hover {
+    background-color: #e69500;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #ff8c42;
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5e6;
+    font-family: "Rubik", sans-serif;
+
+}
+
+.hero {
+
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Rubik", sans-serif;
+
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    padding: 2px;
+    font-family: "Rubik", sans-serif;
+
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    padding: 2px 2px;
+    font-family: "Rubik", sans-serif;
+
+}
+
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #ff8c42;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    border: 1px solid #ff8c42;
+    color: #ff8c42;
+}
+
+.stats {
+    margin-top: 30px;
+
+    .b {
+        font-size: 50px;
+        color: #ff8c42;
+    }
+
+    .stats p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        font-size: 50px;
+        color: black;
+        font-family: "Rubik", sans-serif;
+
+    }
+
+}
+
+.faces img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: white solid;
+}
+
+
+.meals {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+    gap: 1rem;
+}
+
+.meals img {
+    width: 650px;
+    height: 550px;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    gap: 20px;
+
+    #heading {
+        align-items: center;
+        gap: 200px;
+        color: #666;
+        font-size: 20px;
+        font-family: Rubik, sans-serif;
+        font-weight: bold;
+    }
+
+    #features_logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        color: #666;
+        line-height: 8px;
+        tab-size: 4px;
+        box-sizing: border-box;
+        font-weight: 45px;
+        padding: 55px 55px 5px 1px;
+        filter: brightness(0);
+        opacity: 40%;
+        gap: 50px;
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 59em) {
+            .logos img {
+                height: 2.4rem;
+            }
+        }
+    }
+}
+
+
+.section-work {
+    padding: 9.6rem 0;
+    display: block;
+    unicode-bidi: isolate;
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.container {
+    max-width: 110rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.subheading {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: 400px;
+    color: #cf711f;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: #333;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-info {
+    flex: 1;
+    padding-right: 40px;
+}
+ .number{
+    font-size: 50px;
+ }
+
+.step-info h3 {
+    font-size: 28px;
+    color: #040806;
+}
+
+.step-info p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+.step-image {
+    display: flex;
+    text-align: center;
+    background: radial-gradient(rgba(233, 150, 122, 0.249) 50%, rgba(233, 150, 122, 0.568) 50%);
+    border-radius: 50%;
+    width: 35%;
+    height: 35%;
+    justify-content: center;
+}
+
+
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex;
+    align-items: left;
+    
+}
+
+.meal-button-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.meal-button-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.number p {
+    font-size: 50px;
+    font-weight: 200px;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+
+.meal-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.meal-button:hover {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-info {
+        padding-right: 20px;
+    }
+
+    .step-image {
+        padding-top: 20px;
+    }
+}
+.meals-section {
+    text-align: start;
+    padding: 40px;
+}
+
+.meals-section h3{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.meals-section h1{
+    display: flex;
+    justify-content: center;
+    gap: 5px 15px;
+    font-size: 40px;
+}
+.meals-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.meal {
+    background-color: #fff;
+    padding: 15px 20px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+
+.meal img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    display: flex;
+}
+
+.meal h2 {
+    font-size: 1.5em;
+}
+
+.meal .diet-label {
+    font-weight: bold;
+    color: #32CD32;
+}
+
+.meal .calories, .meal .nutriscore, .meal .rating {
+    padding: 2px;
+}
+
+.diet-options {
+    padding: 30px;
+}
+
+.diet-options h3 {
+    font-size: 1.5em;
+    display: flex;
+
+}
+
+.diet-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2PX;
+}
+
+.diet-options li {
+    display: flex;
+    padding: 0 10px;
+    color: #666;
+}
+.testimonials-gallery-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(255, 245, 230);
+}
+
+.testimonials {
+    width: 40%;
+}
+
+.testimonials h2 {
+    font-size: 1.8em;
+    display: flex;
+}
+
+.testimonial {
+    padding: 0 20px;
+}
+
+.testimonial p {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.testimonial strong {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 55%;
+    overflow: hidden;
+    img:hover{
+        transform: scale(2);
+    }
+
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+.testimonialface img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#lin{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    #eating{
+        font-size: 30px;
+    }
+}
+.pricing{
+    display: flex;
+}
+
+#icon{
+    color:#ff8c42;
+    font-size: 15px;
+}
+.available{
+    display: flex;
+    align-items: start;
+    flex-direction: start;
+    gap: 2px;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+.price{
+    font-size: 40px;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.pricing-plan {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    background-color: #f9f9f9;
+}
+
+.price {
+    font-size: 36px;
+    color: #ff5722;
+}
+
+.best-value {
+    background-color: #ffd54f;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    gap: 20px;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #fff;
+}
+#data p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.feature {
+    width: 20%;
+}
+
+#signup {
+    padding: 40px;
+    background-color: #ffcc80;
+}
+
+#get{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 
+    /* border: 2px orange solid; */
+    background-color: orange;
+    gap: 20px; 
+    #meal{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      gap: 20px;
+      #m1{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      #m2{
+        font-size: 15px;
+      }
+      #fn1{
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: start; 
+        gap: 30px;
+        /* grid-template-columns: auto auto;  */
+        #fn{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          /* padding: 7px 50px; */
+        }
+        /* #em{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        } */
+      }
+      #fn2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        #fn3{
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          justify-content: center;
+          label{
+            font-size: 18px;
+          }
+          #checkbox{
+            padding: 7px 25px;
+            border-radius: 10px;
+            font-size: 20px;
+          }
+          button{
+            font-size: 20px;
+            background-color: brown;
+            color: white;
+            border-radius: 10px;
+            padding:7px 75px ;
+            cursor: pointer;
+          }
+        }
+      }
+  }
+}
+#end{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 110px;
+  #food{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center; 
+      gap: 20px; 
+      margin-bottom: 80px;
+  }
+  #us{
+    margin-bottom: 90px;
+    #us1{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    p{
+      color: grey;
+    }
+  }
+  #ac{
+    margin-bottom: 40px;
+    #us1{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    p{
+      color: grey;
+    }
+  }
+  #cop{
+    margin-bottom: 70px;
+    #us1{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    p{
+      color: grey;
+    }
+  }
+  #re{
+    margin-bottom: 70px;
+    #us1{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    p{
+      color: grey;
+    }
+  }
+}
